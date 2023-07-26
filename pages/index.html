@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogerio Andrade Turismo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+  <meta name="theme-color" content="#F8F9FA">
+</head>
+<body>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Acessar conta</button>
+            <small class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="../img/rogerio.png" alt="Rogerio Turismo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="portoGainhas.html" class="dropdown-item">Porto de Galinhas</a>
+            <a href="morrodeSaoPaulo.html" class="dropdown-item">Morro de São Paulo</a>
+            <a href="bomJesusLapa.html" class="dropdown-item">Bom Jesus da Lapa</a>
+            <a href="maceio.html" class="dropdown-item">Maceio</a>
+            <a href="aracaju.html" class="dropdown-item">Aracaju</a>
+            <a href="salvador.html" class="dropdown-item">Savador</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="planos.html" class="nav-link">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a href="contato.html" class="nav-link">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a href="loguin.html" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="inscricao.html" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
+    <div class="row bg-dark text-white">
+      <div class="col-lg-7 p-0">
+        <div id="carouselCidades" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://baudoturismo.files.wordpress.com/2019/03/bahia-salvador.jpg?w=760" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2017/09/Alagoas-Roteiro-7-Dias-Capa.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://magazine.zarpo.com.br/wp-content/uploads/2020/02/sao-miguel-dos-milagres_zarpo-1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 p-4 align-self-center">
+        <h1 class="display-4">Realize a viagem do seu sonho</h1>
+        <p class="lead">O melhor local para viajar é com a Rogerio Andrade Turismo, mais de 5.000 excursões concluídas.</p>
+        <form action="#">
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+            <span class="input-group-append">
+              <button class="btn btn-primary btn-lg" type="button">Inscreva-se</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="my-5">
+        <span class="h6 d-block text-uppercase">Tudo de melhor para você</span>
+        <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/passaporte.svg" alt="Passaporte">
+          </div>
+          <h3>Documentos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/passagens.svg" alt="Passagens">
+          </div>
+          <h3>Passagens</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/translado.svg" alt="Translado">
+          </div>
+          <h3>Translado</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/praias.svg" alt="Praias">
+          </div>
+          <h3>Praias</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/bagagens.svg" alt="Bagagens">
+          </div>
+          <h3>Bagagens</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="d-flex justify-content-center icon">
+            <img src="../img/icones/turismo.svg" alt="Turismo">
+          </div>
+          <h3>Turismo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.</p>
+        </div>
+      </div>
+      <a href="planos.html" class="btn btn-primary btn-lg mt-4">Comprar plano</a>
+    </div>
+  </section>
+
+  <section id="home-quote" class="p-md-5">
+    <blockquote class="blockquote text-center text-white p-md-5 p-3">
+      <p class="display-4">
+        <em>"Viagem é a única coisa que você comppra e te deixa mais rico."</em>
+      </p>
+      
+    </blockquote>
+  </section>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block text-uppercase">Ainda está com dúvidas?</span>
+      <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+        <div class="pergunta py-2">
+          <a href="#pergunta1" class="lead" data-toggle="collapse" data-parent="perguntasFrequentes">→ É possível cancelar a viagem?</a>
+          <div id="pergunta1" class="collapse show" aria-controls="pergunta1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a href="#pergunta2" class="lead" data-toggle="collapse" data-parent="perguntasFrequentes">→ Qual a garantia que tenho se perder o voo?</a>
+          <div id="pergunta2" class="collapse" aria-controls="pergunta2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a href="#pergunta3" class="lead" data-toggle="collapse" data-parent="perguntasFrequentes">→ Qual a principal forma de viagem?</a>
+          <div id="pergunta3" class="collapse" aria-controls="pergunta3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a href="#pergunta4" class="lead" data-toggle="collapse" data-parent="perguntasFrequentes">→ Qual o melhor destino de viagem?</a>
+          <div id="pergunta4" class="collapse" aria-controls="pergunta4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta py-2">
+          <a href="#pergunta5" class="lead" data-toggle="collapse" data-parent="perguntasFrequentes">→ Vocês dão descontos para grupos grandes?</a>
+          <div id="pergunta5" class="collapse" aria-controls="pergunta5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+    <div class="text-center my-4">
+      <p class="small m-1 text-uppercase">Fale conosco para mais dúvidas</p>
+      <a href="contato.html" class="btn btn-primary btn-lg">Entre em contato</a>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4 class="h6 text-uppercase">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="portoGainhas.html">Porto de Galinhas</a></li>
+            <li><a href="morrodeSaoPaulo.html">Morro de São Paulo</a></li>
+            <li><a href="bomJesusLapa.html">Bom Jesus da Lapa</a></li>
+            <li><a href="maceio.html">Maceio</a></li>
+            <li><a href="aracaju.html">Aracaju</a></li>
+            <li><a href="salvador.html">Salvador</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6 text-uppercase">Dados de Contato</h4>
+          <ul class="list-unstyled">
+            <li class="text-secondary">rogerioandradeturismo@gmail.com</li>
+            <li class="text-secondary">(74) 99968-4441</li>
+            <li class="text-secondary">Todos os dias da Semana, 24 horas por dia</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6 text-uppercase">Redes Sociais</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/rogerioandradeturismo/?locale=pt_BR" class="btn btn-outline-secondary btn-sm btn-block mb-2 footer-button">Facebook</a></li>
+            <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Frogerio10051" class="btn btn-outline-secondary btn-sm btn-block mb-2 footer-button">Twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/UC-DmneZKP-Ufuu-a_gEKquQ" class="btn btn-outline-secondary btn-sm btn-block mb-2 footer-button">YouTube</a></li>
+            <li><a href="https://www.instagram.com/rogerio_andrade_turismo/#" class="btn btn-outline-secondary btn-sm btn-block mb-2 footer-button">Instagran</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Rogerio Andrade Turismo © 2023. Desenvolvido por <a href="https://github.com/JerryAvelino" target="_blank" class="text-dark font-weight-bold">Jerry Avelino</a>.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>
